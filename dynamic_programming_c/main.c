@@ -1,11 +1,14 @@
 #include <stdio.h>
 #include <assert.h>
+#include <time.h>
 
 #include "hash.h"
 #include "fibonacci.h"
 
 int main()
 {
+    clock_t begin = clock();
+
     assert(fib(1) == 1);
     assert(fib(2) == 1);
     assert(fib(3) == 2);
@@ -22,5 +25,8 @@ int main()
     assert(fib(20) == 6765);
     assert(fib(25) == 75025);
     puts("all tests passed");
+
+    clock_t end = clock();
+    double time_spent = (double)(end - begin) / CLOCKS_PER_SEC;
     return 0;
 }
