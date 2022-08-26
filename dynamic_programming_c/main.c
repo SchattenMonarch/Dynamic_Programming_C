@@ -24,9 +24,11 @@ int main()
     assert(fib(13) == 233);
     assert(fib(20) == 6765);
     assert(fib(25) == 75025);
-    puts("all tests passed");
-
+    assert(fib(50) == 12586269025);
+    
     clock_t end = clock();
     double time_spent = (double)(end - begin) / CLOCKS_PER_SEC;
+    puts("all tests passed");
+    printf("time spent: %f s", time_spent);
     return 0;
 }

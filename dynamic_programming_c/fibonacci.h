@@ -2,7 +2,7 @@
 #ifndef _FIBONACCI_
 #define _FIBONACCI_
 
-int fib(int n);
+long long fib(int n);
 
 #endif // !_FIBONACCI_
 
