@@ -1,3 +1,10 @@
+/*
+author: Dennis Folz
+github profile : https://github.com/SchattenMonarch
+date:   25.08.2022
+last update: 27.08.2022
+program: Implement a recursive program to calculate the nth fibonacci sequence with O(n) time complexity
+*/
 #include <stdio.h>
 #include <assert.h>
 #include <time.h>
@@ -11,7 +18,7 @@ int main()
 	//initialize fibonacci.c
     init_fib();
 	
-	//test the fib() function
+	//test the recursive fib() function which returns the nth fibonacci sequence
     assert(fib(1) == 1);
     assert(fib(2) == 1);
     assert(fib(3) == 2);
