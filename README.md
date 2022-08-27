@@ -4,4 +4,4 @@ In  this repository I'll implement different problems related to [dynamic progra
 
 Solved Problems:
 
-- [Implement recursive fibonacci with O(n) time complexity](https://github.com/SchattenMonarch/Dynamic_Programming_C/tree/main/dynamic_programming_c/recursive_fibonacci_O(n)_time)
+- [Implement a recursive function to calculate the nth fibonacci sequence with O(n) time complexity](https://github.com/SchattenMonarch/Dynamic_Programming_C/tree/main/dynamic_programming_c/recursive_fibonacci_O(n)_time)
