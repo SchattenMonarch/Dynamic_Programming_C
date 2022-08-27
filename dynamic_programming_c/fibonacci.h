@@ -5,7 +5,10 @@
 #include <stdlib.h>
 #include "khash.h"
 
-unsigned long long fib(int n);
+
+void init_fib(void);
+long long fib(int n);
+void deinit_fib(void);
 
 #endif // !_FIBONACCI_
 
