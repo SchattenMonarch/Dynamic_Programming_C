@@ -1,16 +1,14 @@
- #include <stdio.h>
- #include <assert.h>
+#include <stdio.h>
+#include <assert.h>
 #include <time.h>
-
 #include "fibonacci.h"
-#include "khash.h"
-
-KHASH_MAP_INIT_INT(map, long long)
 
 int main()
 {
     clock_t begin = clock();
+	
     init_fib();
+	
     assert(fib(1) == 1);
     assert(fib(2) == 1);
     assert(fib(3) == 2);
