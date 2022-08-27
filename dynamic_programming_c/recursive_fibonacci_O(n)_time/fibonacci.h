@@ -3,7 +3,7 @@
 #define _FIBONACCI_
 #include <stdio.h>
 #include <stdlib.h>
-#include "khash.h"
+#include <khash.h>
 
 
 void init_fib(void);
