@@ -1,0 +1,1 @@
+copy the khash.h file to your local libraries folder
