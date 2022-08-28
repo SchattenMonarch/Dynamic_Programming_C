@@ -8,3 +8,4 @@ void deinit_grid_traveler(void);
 
 #endif // !__GRID_TRAVELER__
 
+#pragma once
