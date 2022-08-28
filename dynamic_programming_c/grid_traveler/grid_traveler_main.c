@@ -28,7 +28,7 @@ int main()
 //    assert(grid_traveler(3, 3) == 6);
 //    assert(grid_traveler(18, 18) == 2333606220);
 
-    grid_traveler(5, 5);
+    grid_traveler(6, 6);
   
     //free allocated memory
     deinit_grid_traveler();
