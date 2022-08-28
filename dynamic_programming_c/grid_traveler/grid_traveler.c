@@ -21,3 +21,7 @@ long long grid_traveler(int row, int column) {
 	if (row == 0 || column == 0) return 0;
 	return grid_traveler(row - 1, column) + grid_traveler(row, column - 1);
 }
+
+void deinit_grid_traveler(void) {
+	free(map_ptr);
+}
