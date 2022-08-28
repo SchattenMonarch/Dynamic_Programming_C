@@ -19,17 +19,19 @@ int main()
     clock_t begin = clock();
 
     //initialize all data structures and vars in grid_traveler.c
- //   init_grid_traveler();
+    init_grid_traveler();
 
     //test the recursive grid_traveler(n, m) function
-    assert(grid_traveler(1, 1) == 1);
-    assert(grid_traveler(2, 3) == 3);
-    assert(grid_traveler(3, 2) == 3);
-    assert(grid_traveler(3, 3) == 6);
+//    assert(grid_traveler(1, 1) == 1);
+//    assert(grid_traveler(2, 3) == 3);
+//    assert(grid_traveler(3, 2) == 3);
+//    assert(grid_traveler(3, 3) == 6);
 //    assert(grid_traveler(18, 18) == 2333606220);
+
+    grid_traveler(5, 5);
   
     //free allocated memory
-//    deinit_grid_traveler();
+    deinit_grid_traveler();
 
     //stop the clock for time measurement
     clock_t end = clock();
