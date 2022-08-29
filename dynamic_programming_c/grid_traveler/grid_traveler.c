@@ -25,7 +25,7 @@ long long grid_traveler(int row, int column) {
 	char key[KEY_BUFFER_SIZE] = { '\0' }, alt_key[KEY_BUFFER_SIZE] = { '\0' };
 	sprintf(key, "<%d,%d>", row, column); //build key
 	sprintf(alt_key, "<%d,%d>", column, row); //build alternative key, because value of <row,column> equals value of <column,row>
-	printf("ENTERED recursive function with key: %s\n", key);
+//	printf("ENTERED recursive function with key: %s\n", key);
 	if (row == 1 && column == 1) { //base case #1
 		puts("return 1;");
 		return 1;
@@ -36,7 +36,7 @@ long long grid_traveler(int row, int column) {
 	}
 	
 	if (is_key_in_hashmap(key, alt_key)) {//is the key in the hash map?
-		printf("Key %s / found key %s found in hash_map with the value %lld at iterator = %d\n", key, kh_key(map_ptr, it), kh_val(map_ptr, it), it);
+//		printf("Key %s / found key %s found in hash_map with the value %lld at iterator = %d\n", key, kh_key(map_ptr, it), kh_val(map_ptr, it), it);
 		return kh_val(map_ptr, it);//return the corresponding value
 	}
 	else {//key was not found. 
@@ -45,7 +45,7 @@ long long grid_traveler(int row, int column) {
 		it = kh_put(map, map_ptr, key, &absent); //insert the key address into hash map
 		if(absent) kh_key(map_ptr, it) = _strdup(key);//LESSON LEARNED: Overwrite the key with the string content, otherwise kh_get() fails
 		kh_val(map_ptr, it) = val; //adjust the value corresponing to the key
-		printf("Key %s value was CALCULATED: %lld and inserted into the hash_map with the key: %s at iterator = %d\n", key, kh_val(map_ptr, it),key, it);
+//		printf("Key %s value was CALCULATED: %lld and inserted into the hash_map at iterator = %d\n", key, kh_val(map_ptr, it), it);
 	}
 	return kh_val(map_ptr, it);//return the calculated value
 }
