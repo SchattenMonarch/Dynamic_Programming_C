@@ -27,11 +27,11 @@ long long grid_traveler(int row, int column) {
 	sprintf(alt_key, "<%d,%d>", column, row); //build alternative key, because value of <row,column> equals value of <column,row>
 //	printf("ENTERED recursive function with key: %s\n", key);
 	if (row == 1 && column == 1) { //base case #1
-		puts("return 1;");
+//		puts("return 1;");
 		return 1;
 	} 
 	if (row == 0 || column == 0) {//base case #2
-		puts("return 0;");
+//		puts("return 0;");
 		return 0;
 	}
 	
