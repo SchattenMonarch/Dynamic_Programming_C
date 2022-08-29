@@ -32,11 +32,11 @@ int main()
     clock_t begin = clock();
 
     //test can_sum
-    assert(can_sum(7, (int[]){2, 3}) == true);
-    assert(can_sum(7, (int[]){ 5, 3, 4, 7 }) == true);
-    assert(can_sum(7, (int[]) { 2, 4 }) == true);
-    assert(can_sum(8, (int[]) { 2, 3, 5 }) == true);
-    assert(can_sum(30, (int[]) { 8, 17, 27 }) == false);
+    assert(can_sum(7, (int[]){2, 3}, 2));
+    assert(can_sum(7, (int[]){ 5, 3, 4, 7 }, 4));
+    assert(!can_sum(7, (int[]) { 2, 4 }, 2));
+    assert(can_sum(8, (int[]) { 2, 3, 5 }, 3));
+    assert(!can_sum(30, (int[]) { 8, 17, 27 }, 3));
 
     //stop the clock for time measurement
     clock_t end = clock();
