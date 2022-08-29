@@ -31,13 +31,17 @@ int main()
     //start clock for time measurement
     clock_t begin = clock();
 
+    init_can_sum();
     //test can_sum
     assert(can_sum(7, (int[]){2, 3}, 2));
     assert(can_sum(7, (int[]){ 5, 3, 4, 7 }, 4));
     assert(!can_sum(7, (int[]) { 2, 4 }, 2));
     assert(can_sum(8, (int[]) { 2, 3, 5 }, 3));
     assert(!can_sum(30, (int[]) { 8, 17, 27 }, 3));
+    assert(!can_sum(300, (int[]) { 7, 14 }, 2));
+    assert(can_sum(422, (int[]) { 99, 2 }, 2));
 
+     deinit_can_sum();
     //stop the clock for time measurement
     clock_t end = clock();
     //calculate the spent time
