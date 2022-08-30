@@ -6,3 +6,4 @@ In this repository I'll implement different problems related to [dynamic program
 
 - [Implement a recursive function to calculate the nth fibonacci sequence with O(n) time complexity](https://github.com/SchattenMonarch/Dynamic_Programming_C/tree/main/dynamic_programming_c/recursive_fibonacci_O(n)_time)
 - [Implement an optimized one way grid-traveler program using recursion with O(n*m) time complexity](https://github.com/SchattenMonarch/Dynamic_Programming_C/tree/main/dynamic_programming_c/grid_traveler)
+- [Implement an optmized, recursive can_sum program, that checks if it is possible to generate a target number by adding up numbers from a given array. The time complexity has to be O(n*m). (n = target number, m = length of the array)](https://github.com/SchattenMonarch/Dynamic_Programming_C/tree/main/dynamic_programming_c/can_sum)
